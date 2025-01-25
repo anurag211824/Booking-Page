@@ -16,9 +16,10 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  max-width: 1200px;
+  max-width: 1300px;
   margin: auto;
-  padding: 2rem;
+  padding: 2.2rem;
+  margin-bottom: 2.5rem;
 }
 .desktop-nav {
   display: flex;
@@ -60,7 +61,7 @@ body {
   width: 100%;
   margin: auto;
   height: 100vh;
-  background-color: #2f354f;
+  background-color: hsla(229, 25%, 25%, 0.859);
   padding: 2rem;
   display: none;
 }
@@ -69,13 +70,12 @@ body {
   gap: 0.5rem;
   flex-shrink: 0;
   margin-bottom: 1rem;
-
   gap: auto;
   justify-content: space-between;
   align-items: center;
 }
 .mobile-nav {
-    color:white
+  color: white;
 }
 .mobile-nav button {
   border: none;
@@ -104,6 +104,7 @@ body {
   padding: 0.5rem 7rem 0.5rem 7rem;
   border-radius: 0.5rem;
   margin-top: 1rem;
+  width: 100%;
 }
 .mobile hr {
   margin-bottom: 0.5rem;
@@ -126,4 +127,231 @@ body {
   .desktop {
     gap: 4.1rem;
   }
+}
+
+/* hero section */
+.hero {
+  max-width: 1300px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-self: center;
+}
+.hero-left {
+  padding: 2rem;
+  width: 700px;
+}
+
+.hero-heading {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+.hero-left p {
+  font-weight: 400;
+  margin-bottom: 2.5rem;
+}
+.hero-buttons {
+  display: flex;
+  gap: 1.7rem;
+}
+.hero-left button {
+  background-color: #5166e0;
+  color: white;
+  padding: 0.8rem 1.2rem;
+  border: none;
+  border-radius: 0.5rem;
+  font-weight: 700;
+  font-size: 1rem;
+  cursor: pointer;
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);
+}
+hero-right img {
+  width: 400px;
+}
+.hero-left .second-btn {
+  background-color: #fb5859;
+  color: white;
+}
+
+@media (max-width: 1080px) {
+  .hero {
+    flex-direction: column;
+    align-items: center;
+  }
+  .hero-left {
+    width: 100%;
+  }
+  .hero-left p {
+    width: 70%;
+  }
+
+  .hero-right {
+    width: 100%;
+  }
+  .hero-right img {
+    width: 100%;
+  }
+
+  .feature-list {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+  }
+}
+@media (max-width: 450px) {
+  .hero-right img {
+    width: 97%;
+  }
+  .hero-left p {
+    width: 100%;
+  }
+
+  .hero-heading {
+    font-size: 1.7rem;
+  }
+  .hero-left p {
+    font-size: 0.99999rem;
+  }
+  .desktop {
+    margin-bottom: -1rem;
+  }
+  .hero-left button {
+    font-size: 0.7rem;
+    padding: 0.4rem 0.8rem;
+  }
+}
+.Features {
+  max-width: 1300px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 3rem;
+  padding:2.2rem;
+}
+.Features h3 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+.Features p {
+  max-width: 600px;
+  text-align: center;
+  width: 100%;
+  margin-bottom: 2.5rem;
+  font-size: 1.2rem;
+}
+.feature-list {
+  display: flex;
+  gap: 10rem;
+}
+.feature-list .lists {
+  font-size: 1.5rem;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.lists hr {
+  display: none;
+  margin-top: 1rem;
+  border: 1px solid #ff6347;
+}
+.lists:hover hr {
+  display: block; 
+}
+
+.feature-list {
+  display: flex;
+  gap: 10rem;
+  justify-content: center;
+ 
+}
+
+.display-area {
+  max-width: 1000px;
+  margin-top: 3rem;
+  padding: 2rem;
+}
+
+.component {
+  display: flex;
+  gap: 10rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.image-box img {
+  max-width: 600px;
+}
+
+.text-box {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+
+.text-box h3 {
+  color: #333;
+}
+
+.text-box p {
+  font-size: 1rem;
+  color: #666;
+  text-align: left;
+}
+
+/* Smooth fade-in effect */
+.fade-in {
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 1080px) {
+  .feature-list{
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+  }
+  .component {
+    flex-direction: column;
+    gap: 4rem;
+    align-items: center;
+    
+  }
+  .image-box img {
+    max-width:300px;
+    margin-left: -5.5rem;
+  }
+  .text-box h3 {
+    color: #333;
+    font-size: 1.5rem;
+  }
+  .text-box p {
+    color: #333;
+    font-size: 1rem;
+  }
+ 
+}
+
+
+@media (max-width: 450px) {
+  .feature-list .lists{
+    font-size: 1.5rem;;
+  }
+  .image-box img {
+    width:100%;
+    margin: 0rem;
+  }
+
+
 }
