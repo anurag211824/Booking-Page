@@ -332,12 +332,12 @@ hero-right img {
   }
   .component {
     flex-direction: column;
-    gap: 4rem;
+    gap: 2rem;
     align-items: center;
     
   }
   .image-box img {
-    max-width:300px;
+    max-width:400px;
     margin-left: -5.5rem;
   }
   .text-box h3 {
