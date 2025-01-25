@@ -256,9 +256,17 @@ hero-right img {
   margin-top: 1rem;
   border: 1px solid #ff6347;
 }
+.list1 hr {
+  display: block;
+}
 .lists:hover hr {
   display: block; 
+  .list1 hr{
+    display: none;
+  }
 }
+
+
 
 .feature-list {
   display: flex;
