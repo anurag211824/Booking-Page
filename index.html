@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <title>Frontend Mentor | Bookmark landing page</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="desktop">
+      <img src="/images/logo-bookmark.svg" alt="" />
+      <nav class="desktop-nav">
+        <button>Features</button>
+        <button>Pricing</button>
+        <button>Contact</button>
+        <button>Login</button>
+        <button><img  onclick="toogleNavbar()" src="/images/icon-hamburger.svg" alt="" /></button>
+      </nav>
+    </header>
+
+    <header class="mobile">
+      <nav class="mobile-nav">
+        <div>
+          <img src="/images/logo-bookmark.svg" alt="" />
+        </div>
+        <div >
+          <button class=""><img onclick="toogleNavbar()" src="/images/icon-close.svg" alt="" /></button>
+        </div>
+      </nav>
+      <hr>
+      <div class="nav-bottom">
+        <div><button>Features</button></div>
+        <hr>
+       
+        <div><button>Pricing</button> </div>
+        <hr>
+      
+        <div><button>Contact</button></div>
+        <hr>
+        <div><button class="login">Login</button></div>
+      </div>
+    </header>
+    <script src="script.js"></script>
+  </body>
+</html>

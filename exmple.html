@@ -1,0 +1,142 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hover to Display Components</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      min-height: 100vh;
+      background-color: #f4f4f4;
+    }
+
+    .container {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      width: 70%;
+    }
+
+    .hover-items {
+      display: flex;
+      gap: 20px;
+      justify-content: center;
+    }
+
+    .hover-item {
+      padding: 15px;
+      background-color: #0078d7;
+      color: white;
+      cursor: pointer;
+      border-radius: 8px;
+      text-align: center;
+      transition: background-color 0.3s ease;
+    }
+
+    .hover-item:hover {
+      background-color: #005fa3;
+    }
+
+    .display-area {
+      margin-top: 30px;
+      padding: 20px;
+      background-color: #ffffff;
+      color: #333;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      min-height: 100px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+
+    .component {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 1px;
+    }
+
+    .component img {
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      object-fit: cover;
+    }
+
+    .component h3 {
+      margin: 0;
+      color: #333;
+    }
+
+    .component p {
+      margin: 0;
+      font-size: 0.9rem;
+      color: #666;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <!-- Hoverable Items -->
+    <div class="hover-items">
+      <div class="hover-item" onmouseover="showComponent(1)">
+        Hover Item 1
+      </div>
+      <div class="hover-item" onmouseover="showComponent(2)">
+        Hover Item 2
+      </div>
+      <div class="hover-item" onmouseover="showComponent(3)">
+        Hover Item 3
+      </div>
+    </div>
+
+    <!-- Display Area -->
+    <div id="display-area" class="display-area">
+      Hover over an item to display a component here.
+    </div>
+  </div>
+
+  <script>
+    // Data for each component
+    const components = {
+      1: `
+        <div class="component">
+          <img src="https://rukminim2.flixcart.com/image/850/1000/xif0q/poster/q/o/p/small-poster-armor-iron-man-robots-the-avengers-movie-tony-stark-original-imaghusjfagmk9py.jpeg?q=90&crop=false" alt="Avatar 1">
+          <h3>Component 1</h3>
+          <p>This is the content for Component 1.</p>
+        </div>
+      `,
+      2: `
+        <div class="component">
+          <img src="https://i.pinimg.com/236x/30/2f/6f/302f6ff8efe1ee84203814bc55e30209.jpg" alt="Avatar 2">
+          <h3>Component 2</h3>
+          <p>This is the content for Component 2.</p>
+        </div>
+      `,
+      3: `
+        <div class="component">
+          <img src="https://cdn.britannica.com/30/182830-050-96F2ED76/Chris-Evans-title-character-Joe-Johnston-Captain.jpg" alt="Avatar 3">
+          <h3>Component 3</h3>
+          <p>This is the content for Component 3.</p>
+        </div>
+      `
+    };
+
+    // Function to display the corresponding component
+    function showComponent(id) {
+      const displayArea = document.getElementById('display-area');
+      displayArea.innerHTML = components[id];
+    }
+  </script>
+</body>
+</html>
