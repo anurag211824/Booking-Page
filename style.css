@@ -74,6 +74,9 @@ body {
   justify-content: space-between;
   align-items: center;
 }
+.mobile-nav {
+    color:white
+}
 .mobile-nav button {
   border: none;
   background-color: transparent;
@@ -90,6 +93,7 @@ body {
   background-color: transparent;
   border: none;
   color: white;
+  cursor: pointer;
 }
 .nav-bottom .login {
   font-size: 25px;
