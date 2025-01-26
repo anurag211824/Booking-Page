@@ -16,7 +16,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  max-width: 1300px;
+  max-width: 1350px;
   margin: auto;
   padding: 2.2rem;
   margin-bottom: 4rem;
@@ -125,7 +125,7 @@ body {
     display: none;
   }
   .desktop {
-    gap: 4.1rem;
+    gap: 6rem;
   }
 }
 
@@ -220,6 +220,9 @@ hero-right img {
     font-size: 0.7rem;
     padding: 0.4rem 0.8rem;
   }
+  .desktop {
+    gap: 6rem;
+  }
  
 }
 .Features {
@@ -285,6 +288,9 @@ hero-right img {
   gap: 10rem;
   justify-content: center;
   align-items: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding:1rem;
+  overflow: hidden;
 }
 
 .image-box img {
@@ -295,6 +301,7 @@ hero-right img {
   display: flex;
   flex-direction: column;
   align-items: center;
+  line-height: 1.5;
 }
 
 .text-box h3 {
@@ -438,6 +445,12 @@ hero-right img {
     align-items: center;
     margin-bottom: 3rem;
   }
+  .hero-buttons{
+    flex-direction: column;
+  }
+  .hero-buttons button{
+   width: fit-content;
+  }
 }
 @media (max-width: 682px) {
   .browsers {
@@ -458,6 +471,7 @@ hero-right img {
     margin-bottom: 0.5rem;
     font-size: 1rem;
   }
+ 
 }
 @media (max-width: 450px) {
   .browsers {
@@ -505,8 +519,11 @@ hero-right img {
     text-align: center;
     margin-bottom: 1rem;
   }
-  .hero-left{
-    margin-bottom: -5rem;
+  .contact-form{
+    flex-direction: column;
+  }
+  .desktop {
+    gap: 6.5rem;
   }
   
 }
@@ -590,4 +607,47 @@ transform: rotate(-180deg);
 .answer.active {
   max-height: 200px;
   padding: 10px 0;
+}
+
+
+footer{
+  background-color: #5166e0;
+  color:white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
+}
+footer p{
+  margin-top: 2rem;
+  text-transform: uppercase;
+  margin-bottom: 3rem;
+  font-size: 1.5rem;
+}
+footer h1{
+  max-width: 500px;;
+  text-align: center;
+  margin-bottom: 2.5rem;
+}
+
+.email-input{
+  border:none;
+  padding: 0.5rem 2.5rem;
+  border-radius: 0.4rem;
+  font-size: 1rem;
+}
+.submit-button{
+  border:none;
+  padding: 0.5rem 2rem;
+  border-radius: 0.4rem;
+  font-size: 1rem;
+  background-color: #fb5859;
+  color: white;
+  font-weight: 500;
+  cursor: pointer;
+}
+.contact-form{
+  display: flex;
+  gap:1.5rem;
+  margin-bottom: 3rem;
 }
