@@ -288,7 +288,7 @@ hero-right img {
   gap: 10rem;
   justify-content: center;
   align-items: center;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
   padding:1rem;
   overflow: hidden;
 }
