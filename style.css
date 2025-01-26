@@ -223,6 +223,9 @@ hero-right img {
   .desktop {
     gap: 6rem;
   }
+  .hero-buttons button{
+   padding: 0.7rem 1.3rem;
+  }
  
 }
 .Features {
